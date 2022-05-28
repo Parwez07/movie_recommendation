@@ -120,7 +120,6 @@
     {% if reviews %}
     <h2 class="title" style="color:white">USER REVIEWS</h2>
     <br>
-    <button class="btn btn-primary" id="review_btn">Show Reviews</button>
     <div class="col-md-12" style="margin: 0 auto; margin-top:25px;">
       <table class="table table-bordered" bordercolor="white" style="color:white">
         <thead>
@@ -200,20 +199,4 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
-<script>
-  let btn = document.getElementById('review_btn');
-  let block = document.getElementById('review_block');
-
-  btn.addEventListener('click', ()=>{
-    if(block.style.display === "none"){
-      block.style.display = "block";
-      btn.innerHTML = "Hide Reviews";
-    }
-    else{
-      block.style.display = "none";
-      btn.innerHTML = "Show Reviews";
-    }
-  })
-</script>
-
 </html>
